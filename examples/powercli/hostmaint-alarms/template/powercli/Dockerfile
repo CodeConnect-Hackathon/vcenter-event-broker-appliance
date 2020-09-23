@@ -13,6 +13,8 @@ WORKDIR /root
 
 USER root
 
+RUN [ "pwsh","-command","Install-Module -Name AsBuiltReport" ]
+
 # Populate example here - i.e. "cat", "sha512sum" or "node index.js"
 SHELL [ "pwsh", "-command" ]
 ENV fprocess="xargs pwsh ./function/script.ps1"
