@@ -12,6 +12,6 @@ functions:
       read_debug: true
       function_debug: true
     secrets:
-      - vc-hostmaint-config
+      - vc-hostmaint-asbuilt-config
     annotations:
       topic: EnteredMaintenanceModeEvent, ExitMaintenanceModeEvent
