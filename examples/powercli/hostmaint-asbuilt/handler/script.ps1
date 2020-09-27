@@ -28,17 +28,17 @@ $hostMoRef = Get-View $moRef
 # Get the vCenter AlarmManager
 $alarmManager = Get-View AlarmManager
 
-if ($json.subject -eq "EnteredMaintenanceModeEvent") {
-    # Disable alarm actions on the host
-    Write-Host "Disabling alarm actions on host: $eventObjectName"
-    $alarmManager.EnableAlarmActions($hostMoRef.MoRef, $false)
-}
+#if ($json.subject -eq "EnteredMaintenanceModeEvent") {
+#    # Disable alarm actions on the host
+#    Write-Host "Disabling alarm actions on host: $eventObjectName"
+#    $alarmManager.EnableAlarmActions($hostMoRef.MoRef, $false)
+#}
 
-if ($json.subject -eq "ExitMaintenanceModeEvent") {
-    # Enable alarm actions on the host
-    Write-Host "Enabling alarm actions on host: $eventObjectName"
-    $alarmManager.EnableAlarmActions($hostMoRef.MoRef, $true)
-}
+#if ($json.subject -eq "ExitMaintenanceModeEvent") {
+#    # Enable alarm actions on the host
+#    Write-Host "Enabling alarm actions on host: $eventObjectName"
+#    $alarmManager.EnableAlarmActions($hostMoRef.MoRef, $true)
+#}
 
 Write-Host "Disconnecting from vCenter Server ..."
 Disconnect-VIServer * -Confirm:$false
