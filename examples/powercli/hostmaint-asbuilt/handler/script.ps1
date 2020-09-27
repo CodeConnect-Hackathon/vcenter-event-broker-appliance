@@ -1,5 +1,5 @@
 # Process function Secrets passed in
-$VC_CONFIG_FILE = "/var/openfaas/secrets/vc-hostmaint-config"
+$VC_CONFIG_FILE = "/var/openfaas/secrets/vc-hostmaint-asbuilt-config"
 $VC_CONFIG = (Get-Content -Raw -Path $VC_CONFIG_FILE | ConvertFrom-Json)
 if($env:function_debug -eq "true") {
     Write-host "DEBUG: `"$VC_CONFIG`""

@@ -3,7 +3,7 @@ provider:
   name: openfaas
   gateway: https://veba02
 functions:
-  powercli-entermaint:
+  powercli-entermaint-asbuilt:
     lang: powercli
     handler: ./handler
     image: kremerpatrick/veba-powercli-esx-maintenance:latest
