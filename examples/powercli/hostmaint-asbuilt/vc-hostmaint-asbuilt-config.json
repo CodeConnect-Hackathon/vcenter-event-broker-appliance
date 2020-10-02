@@ -1,5 +1,9 @@
 {
     "VC" : "vc01.ad.patrickkremer.com",
     "VC_USERNAME" : "administrator@vsphere.local",
-    "VC_PASSWORD" : ""
+    "VC_PASSWORD" : "VMware1!",
+    "SQS_QUEUE_URL" : "https://sqs.us-west-2.amazonaws.com/773198461984/vebaqueue",
+    "ACCESS_KEY" : "AKIA3IBRYHQQHIEW3FUB",
+    "SECRET_KEY" : "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",
+    "REGION" : "us-west-2"
 }
